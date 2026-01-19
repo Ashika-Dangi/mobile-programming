@@ -1,0 +1,25 @@
+function calculate() {
+    let subjectIds = ["s1", "s2", "s3", "s4", "s5", "s6", "s7"];
+    let totalMarks = 0;
+
+    for (let i = 0; i < subjectIds.length; i++) {
+        let marks = Number(document.getElementById(subjectIds[i]).value);
+        totalMarks += marks;
+    }
+
+    let percentage = (totalMarks / 700) * 100;
+
+    document.getElementById("total").innerText =
+        "Total Marks: " + totalMarks;
+
+    document.getElementById("percentage").innerText =
+        "Percentage: " + percentage.toFixed(2) + "%";
+
+    if (percentage >= 40) {
+        document.getElementById("result").innerText = "Result: PASS";
+        document.getElementById("result").style.color = "green";
+    } else {
+        document.getElementById("result").innerText = "Result: FAIL";
+        document.getElementById("result").style.color = "red";
+    }
+}
