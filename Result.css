@@ -1,0 +1,29 @@
+Yo css ho hai
+
+body {
+    font-family: Calibri;
+    background-color : beige;
+
+}
+
+.result-calculator {
+    width: 300px;
+    background-color :aliceblue;
+    padding : 15px;
+    margin:50px auto;
+    border: 1px solid snow;
+    
+}
+h1 {
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+}
+
+button {
+    width: 100%;
+    padding: auto;
+}
